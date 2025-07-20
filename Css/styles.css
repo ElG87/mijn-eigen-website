@@ -1,3 +1,10 @@
+/* Basisstyling voor alles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header styling */
 header {
     font-family: Arial, sans-serif;
