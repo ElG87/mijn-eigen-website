@@ -1,3 +1,4 @@
+/* Header styling */
 header {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ header {
     color: white;
     text-align: center;
 }
+
 /* Navigatie styling */
 nav {
     background-color: #5dadb8;
