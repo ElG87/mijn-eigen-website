@@ -35,6 +35,12 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Main styling */
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
 /* Footer styling */
 footer {
     background-color: #333;
