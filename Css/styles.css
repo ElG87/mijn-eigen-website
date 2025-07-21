@@ -56,22 +56,22 @@ main {
     text-align: center;
 }
 
-.project {
+.project , .contact {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
 }
-.project ul {
+.project ul, .contact ul {
     list-style-type: none;
     padding: 0;
 }
-.project a{
+.project a, .contact a {
     color: #42b9a5ef;
     text-decoration: none;
 }
-.project a:hover {
+.project a:hover , .contact a:hover {
     text-decoration: underline;
 }
 
