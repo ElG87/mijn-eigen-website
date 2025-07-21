@@ -63,6 +63,17 @@ main {
     margin: 10px;
     border-radius: 5px;
 }
+.project ul {
+    list-style-type: none;
+    padding: 0;
+}
+.project a{
+    color: #42b9a5ef;
+    text-decoration: none;
+}
+.project a:hover {
+    text-decoration: underline;
+}
 
 /* Footer styling */
 footer {
