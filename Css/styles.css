@@ -23,6 +23,7 @@ nav {
     padding: 10px;
     text-align: center;
     border: solid 1px #333;
+    display: flex;
 }
 
 ul {
