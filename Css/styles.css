@@ -56,6 +56,13 @@ main {
     text-align: center;
 }
 
+.project {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
 /* Footer styling */
 footer {
     background-color: #333;
