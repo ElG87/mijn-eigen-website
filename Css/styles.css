@@ -50,11 +50,12 @@ main {
     font-family: Arial, sans-serif;
 }
 
-.sec-naam{
+.sec-naam ,.sec-over, .sec-projecten {
     background-color: #d4eee6b4;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin: 1rem 0;
+    text-align: center;
 }
 
 /* Footer styling */
