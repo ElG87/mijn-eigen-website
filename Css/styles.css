@@ -10,17 +10,18 @@ header {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 50px;
-    background-color: #42b9a6;
+    background-color: #42b9a5ef;
     color: white;
     text-align: center;
 }
 
 /* Navigatie styling */
 nav {
-    background-color: #5dadb8;
+    background-color: #7b8383;
     color: white;
     padding: 10px;
     text-align: center;
+    border: solid 1px #333;
 }
 
 ul {
