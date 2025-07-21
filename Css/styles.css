@@ -17,11 +17,11 @@ header {
 
 /* Navigatie styling */
 nav {
-    background-color: #7b8383;
+    background-color: #b8cccc;
     color: white;
     font-size: 24;
     padding: 10px;
-    border: solid 1px #333;
+    border: solid 1px #868686f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,6 @@ a:hover {
 
 /* Main styling */
 main {
-    padding: 20px;
     font-family: Arial, sans-serif;
 }
 
@@ -56,14 +55,14 @@ main {
     text-align: center;
 }
 
-.project , .contact {
+.project , .contact ,.intro {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
 }
-.project ul, .contact ul {
+.project ul, .contact ul ,.intro ul {
     list-style-type: none;
     padding: 0;
 }
@@ -71,7 +70,7 @@ main {
     color: #42b9a5ef;
     text-decoration: none;
 }
-.project a:hover , .contact a:hover {
+.project a:hover , .contact a:hover ,.intro a:hover {
     text-decoration: underline;
 }
 
