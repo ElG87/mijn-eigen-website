@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header styling */
 header {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 50px;
     background-color: #42b9a5ef;
@@ -19,6 +19,7 @@ header {
 nav {
     background-color: #7b8383;
     color: white;
+    font-size: 24;
     padding: 10px;
     text-align: center;
     border: solid 1px #333;
@@ -35,7 +36,7 @@ li {
 }
 
 a {
-    color: white;
+    color: rgb(10, 10, 10);
     text-decoration: none;
 }
 
