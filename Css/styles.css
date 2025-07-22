@@ -17,7 +17,6 @@ header {
     margin: 0;
     padding: 50px;
     background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
-    color: rgb(95, 92, 92);
     text-align: center;
 }
 
@@ -45,13 +44,11 @@ a {
     color: rgb(10, 10, 10);
     text-decoration: none;
 }
-
+/* Nog niet zeker over deze link styling*/
  a #home-link{
     display: flex;
     justify-content: center;
     align-self: left;
-
-    
 }
 
 a:hover {
