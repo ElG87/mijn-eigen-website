@@ -80,6 +80,13 @@ main {
     text-decoration: underline;
 }
 
+/* Mijn foto */
+#mijn-foto {
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
 /* Footer styling */
 footer {
     background-color: #333;
