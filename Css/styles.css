@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("../Afbeeldingen/pastel_coloured_watercolour_texture_background_1801.jpg");
+    background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
     color: #333;
     font-size: 16px;
 }
@@ -16,20 +16,20 @@ body {
 header {
     margin: 0;
     padding: 50px;
-    background-image: url("../Afbeeldingen/pastel_coloured_watercolour_texture_background_1801.jpg");
+    background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
     color: rgb(95, 92, 92);
     text-align: center;
 }
 
 /* Navigatie styling */
 nav {
-    background-color: #e9ecec;
+    background-color: #e9ecec31;
     color: white;
     font-size: 20px;
     padding: 10px;
     border: solid 1px #9e9b9bf5;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -38,12 +38,20 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 a {
     color: rgb(10, 10, 10);
     text-decoration: none;
+}
+
+ a #home-link{
+    display: flex;
+    justify-content: center;
+    align-self: left;
+
+    
 }
 
 a:hover {
