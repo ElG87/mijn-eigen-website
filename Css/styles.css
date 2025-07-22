@@ -64,9 +64,9 @@ main {
 .project , .contact ,.intro {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 50px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 .project ul, .contact ul ,.intro ul {
     list-style-type: none;
@@ -93,7 +93,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
