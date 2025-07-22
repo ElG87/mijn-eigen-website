@@ -72,25 +72,31 @@ main {
     padding: 2rem;
     margin: 2rem;
 }
-/* Nog niet zeker of de onderstaande styling ga gebruiken */
+                /* De divs styling van de pagina's */
 .project , .contact ,.intro {
     background-color: #f0f0f018;
     padding: 20px;
     margin: 10px;
 }
-    */
+                /* Paragrafen styling van de pagina's */
 .project ul, .contact ul ,.intro ul {
     list-style-type: none;
     padding: 0;
 }
+                /* Links in de paragrafen styling van de pagina's*/
 .project a, .contact a {
     color: #42b9a5ef;
     text-decoration: none;
 }
 .project a:hover , .contact a:hover ,.intro a:hover {
     text-decoration: underline;
-}form { max-width:420px; margin:50px auto; }
+}
 
+/* Formulier styling */
+                /* Algemene formulier styling */
+form { max-width:420px; margin:50px auto; }
+
+                /* Input velden styling */
 .feedback-input {
   color:rgb(0, 0, 0);
   font-family: Helvetica, Arial, sans-serif;
@@ -108,14 +114,16 @@ main {
   outline:0;
 }
 
+            /* Styling van invulveld zodra deze geklikt is*/
 .feedback-input:focus { border:2px solid #1f3f3a; }
 
+            /* Tekstvak styling */
 textarea {
   height: 150px;
   line-height: 150%;
   resize:vertical;
 }
-
+              /* Verstuurknop styling */
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
@@ -138,6 +146,8 @@ textarea {
     max-width: 20%;
     height: auto;
     border-radius: 50%;
+    border: solid 2px #64e2cdef;
+    box-shadow: 10px 4px 20px rgb(0, 0, 0);
 }
 
 /* Footer styling */
