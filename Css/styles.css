@@ -108,7 +108,7 @@ textarea {
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
+  background:#76dfbc;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -120,7 +120,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { background:#49cc84; }
 
 /* Mijn foto */
 #mijn-foto {
