@@ -7,7 +7,8 @@
 }
 
 body {
-    background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
+    background-image: url("../Afbeeldingen/tech-1495181_1920.jpg");
+    background-size: cover;
     color: #333;
     font-size: 16px;
 }
@@ -16,7 +17,6 @@ body {
 header {
     margin: 0;
     padding: 50px;
-    background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
     text-align: center;
 }
 
@@ -79,7 +79,8 @@ main {
 }
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
-    background-color: #f0f0f018;
+    background-color: #abbbb596;
+    border-radius: 5px;
     padding: 20px;
     margin: 10px;
 }
@@ -90,7 +91,6 @@ main {
 }
                 /* Links in de paragrafen styling van de pagina's*/
 .project a, .contact a {
-    color: #42b9a5ef;
     text-decoration: none;
 }
 .project a:hover , .contact a:hover ,.intro a:hover {
@@ -109,7 +109,7 @@ form { max-width:420px; margin:50px auto; }
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
-  background-color: transparent;
+  background-color: #8dc4b1;
   border:2px solid #3a3636;
   transition: all 0.3s;
   padding: 13px;
@@ -118,6 +118,7 @@ form { max-width:420px; margin:50px auto; }
   box-sizing: border-box;
   outline:0;
 }
+
 
             /* Styling van invulveld zodra deze geklikt is*/
 .feedback-input:focus { border:2px solid #1f3f3a; }
@@ -144,7 +145,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#6fd19bfb; }
+[type="submit"]:hover { background:#5da19cfb; }
 
 /* Mijn foto */
 #mijn-foto {
@@ -157,10 +158,11 @@ textarea {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #dddada52;
     color: white;
     text-align: center;
     padding: 10px;
     bottom: 0;
+    margin: 0;
     width: 100%;
 }
