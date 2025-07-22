@@ -10,18 +10,18 @@
 header {
     margin: 0;
     padding: 50px;
-    background-color: #42b9a5ef;
-    color: white;
+    background-color: #67ccbbef;
+    color: rgb(95, 92, 92);
     text-align: center;
 }
 
 /* Navigatie styling */
 nav {
-    background-color: #b8cccc;
+    background-color: #e9ecec;
     color: white;
     font-size: 24;
     padding: 10px;
-    border: solid 1px #868686f5;
+    border: solid 1px #9e9b9bf5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,7 @@ a:hover {
 /* Main styling */
 main {
     font-family: Arial, sans-serif;
+    font-size: 24px;
 }
 
 .sec-main {
