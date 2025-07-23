@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
-    background-image: url("../Afbeeldingen/tech-1495181_1920.jpg");
+    /*background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
     background-size: cover;
-    color: #333;
+    */
+    background: linear-gradient(90deg, #098879, #b3e5fc);
+    color: #222;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -22,11 +25,9 @@ header {
 
 /* Navigatie styling */
 nav {
-    background-color: #e9ecec31;
     color: white;
     font-size: 20px;
     padding: 10px;
-    border: solid 1px #9e9b9bf5;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -37,11 +38,11 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 a {
-    color: rgb(10, 10, 10);
+    color: rgb(53, 52, 52);
     text-decoration: none;
 }
 /* Nog niet zeker over deze link styling*/
@@ -59,6 +60,18 @@ a:hover {
 main {
     font-family: Arial, sans-serif;
     font-size: 20px;
+    padding: 4rem 2rem;
+}
+
+#welkom {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    margin: 2rem 0;
+    background-color: #f9f9f91a;
+    font-size: 24px;
 }
 
 .sec-main {
@@ -70,19 +83,15 @@ main {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-.sec-foto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sec-foto , .ik-ben{
     padding: 2rem;
     margin: 2rem;
 }
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
-    background-color: #abbbb596;
-    border-radius: 5px;
-    padding: 20px;
+    padding: 2rem;
     margin: 10px;
+    background-color: #f9f9f91a;
 }
                 /* Paragrafen styling van de pagina's */
 .project ul, .contact ul ,.intro ul {
@@ -95,6 +104,21 @@ main {
 }
 .project a:hover , .contact a:hover ,.intro a:hover {
     text-decoration: underline;
+}
+
+                /* Over mij pagina styling om de main deel in tweeen te splitsen*/
+.sec-main-over-mij {
+    display: flex;
+    height: 100vh;
+}
+
+/* Mijn foto */
+#mijn-foto {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: solid 2px #64e2cdef;
+    box-shadow: 10px 4px 20px rgb(0, 0, 0);
 }
 
 /* Formulier styling */
@@ -147,22 +171,22 @@ textarea {
 }
 [type="submit"]:hover { background:#5da19cfb; }
 
-/* Mijn foto */
-#mijn-foto {
-    max-width: 20%;
-    height: auto;
-    border-radius: 50%;
-    border: solid 2px #64e2cdef;
-    box-shadow: 10px 4px 20px rgb(0, 0, 0);
-}
-
 /* Footer styling */
 footer {
-    background-color: #dddada52;
-    color: white;
+    background-color: #9c9c9c2a;
+    color:#333;
+    position: relative;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Footer homepagina styling */
+ #footer-home {
+    text-align: center;
+    padding: 1rem;
     margin: 0;
     width: 100%;
 }
