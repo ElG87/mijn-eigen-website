@@ -5,7 +5,23 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+  [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    
 body {
     /*background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
     background-size: cover;
@@ -25,9 +41,9 @@ header {
 }
 
 
-    header {
+ header {
         padding: 20px;
-    }
+        }
     
 
 /* Navigatie styling */
@@ -123,11 +139,6 @@ main {
     text-decoration: underline;
 }
 
-                /* Over mij pagina styling om de main deel in tweeen te splitsen*/
-.sec-main-over-mij {
-    display: flex;
-    height: 100vh;
-}
 
 /* Mijn fotostyling op de 'Over mij'-pagina */
 #mijn-foto {
@@ -140,7 +151,10 @@ main {
 
 /* Formulier styling */
                 /* Algemene formulier styling */
-form { max-width:420px; margin:50px auto; }
+form { 
+    max-width:420px; 
+    margin:50px auto; 
+}
 
                 /* Input velden styling */
 .feedback-input {
@@ -192,7 +206,6 @@ textarea {
 footer {
     background-color: #9c9c9c2a;
     color:#333;
-    position: relative;
     text-align: center;
     padding: 1rem;
     bottom: 0;
@@ -207,48 +220,57 @@ footer {
     margin: 0;
     width: 100%;
 }
+
+/* Media queries voor responsieve styling vanaf tabletgrootte*/
 @media screen and (min-width: 768px) {
+    
     header {
         padding: 20px;
         background-color: red;
     }
 
-/* Navigatie styling */
-nav {
-    color: white;
-    font-size: 20px;
-    padding: 10px;
+    /* Navigatie styling */
+    nav {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    a {
+        color: rgb(53, 52, 52);
+        text-decoration: none;
+    }
+    /* Nog niet zeker over deze link styling*/
+    a #home-link{
+        display: flex;
+        justify-content: center;
+        align-self: left;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        padding: 4rem 2rem;
+    }
+
+    .sec-main-over-mij {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    height: 100vh;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-}
-
-a {
-    color: rgb(53, 52, 52);
-    text-decoration: none;
-}
-/* Nog niet zeker over deze link styling*/
- a #home-link{
-    display: flex;
-    justify-content: center;
-    align-self: left;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-main {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    padding: 4rem 2rem;
-}
 }
