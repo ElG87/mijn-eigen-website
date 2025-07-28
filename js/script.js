@@ -6,7 +6,7 @@ mijnFoto.addEventListener("click", function() {
 }
 )};
 
-function huidigeLeftijd() {
+function huidigeLeeftijd() {
     const geboorte = new Date("1987-04-24");
     const vandaag = new Date();
     let leeftijd = vandaag.getFullYear() - geboorte.getFullYear();
@@ -19,4 +19,4 @@ function huidigeLeftijd() {
     document.getElementById("leeftijd").textContent = leeftijd;
 }
 ;
-huidigeLeftijd();
+huidigeLeeftijd();
