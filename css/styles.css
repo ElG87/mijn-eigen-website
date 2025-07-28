@@ -23,9 +23,6 @@
         .col-12 {width: 100%;}
     
 body {
-    /*background-image: url("../Afbeeldingen/122255-OQ9POF-291.jpg");
-    background-size: cover;
-    */
     background: linear-gradient(90deg, #098879, #b3e5fc);
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -61,14 +58,17 @@ nav ul {
     padding: 0;
     gap: 1rem;
 }
+
  nav ul li {
     padding: 1rem;
+    list-style-type: none;
  }
+
 a {
     color: rgb(53, 52, 52);
     text-decoration: none;
 }
-/* Nog niet zeker over deze link styling*/
+
  a #home-link{
     display: flex;
     justify-content: center;
@@ -90,6 +90,7 @@ main {
     text-align: center;
     margin-bottom: 2rem;
 }
+
  /* Mijn foto styling op de homepagina */
 #mijn-foto-home {
     max-width: 30%;
@@ -114,6 +115,7 @@ main {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 .sec-foto , .ik-ben{
     padding: 1rem;
     margin: 1rem;
@@ -133,10 +135,10 @@ main {
 .project a, .contact a {
     text-decoration: none;
 }
+
 .project a:hover , .contact a:hover ,.intro a:hover {
     text-decoration: underline;
 }
-
 
 /* Mijn fotostyling op de 'Over mij'-pagina */
 #mijn-foto {
@@ -182,6 +184,7 @@ textarea {
   line-height: 150%;
   resize:vertical;
 }
+
               /* Verstuurknop styling */
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -198,7 +201,10 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#5da19cfb; }
+
+[type="submit"]:hover { 
+    background:#5da19cfb; 
+}
 
 /* Footer styling */
 footer {
@@ -260,6 +266,11 @@ footer {
         text-decoration: underline;
     }
 
+    #mijn-foto-home:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
     main {
         font-family: Arial, sans-serif;
         font-size: 20px;
