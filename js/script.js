@@ -4,7 +4,8 @@ const mijnFoto = document.getElementById("mijn-foto-home");
 mijnFoto.addEventListener("click", function() {
     window.location.href = "../html/overmij.html";
 }
-)};
+)}
+
 
 function huidigeLeeftijd() {
     const geboorte = new Date("1987-04-24");
@@ -17,6 +18,6 @@ function huidigeLeeftijd() {
     }
 
     document.getElementById("leeftijd").textContent = leeftijd;
-}
-;
+};
 huidigeLeeftijd();
+
