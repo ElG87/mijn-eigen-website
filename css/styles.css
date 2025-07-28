@@ -37,7 +37,6 @@ header {
     margin: 0;
     padding: 50px;
     text-align: center;
-    background-color: blue;
 }
 
 
@@ -63,7 +62,6 @@ nav ul {
     gap: 1rem;
 }
  nav ul li {
-    background-color: green;
     padding: 1rem;
  }
 a {
@@ -226,7 +224,6 @@ footer {
     
     header {
         padding: 20px;
-        background-color: red;
     }
 
     /* Navigatie styling */
@@ -235,8 +232,9 @@ footer {
         font-size: 20px;
         padding: 10px;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     nav ul {
@@ -270,7 +268,21 @@ footer {
 
     .sec-main-over-mij {
     display: flex;
-    height: 100vh;
 }
+
+/* Footer styling */
+footer {
+    background-color: #9c9c9c2a;
+    color:#333;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+}
+
+/* Footer homepagina styling */
+ #footer-home {
+    position: relative;
+    text-align: center;
+    margin: 0;}
 
 }
