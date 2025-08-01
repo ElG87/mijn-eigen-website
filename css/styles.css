@@ -6,7 +6,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
   [class*="col-"] {
-        float: left;
         padding: 15px;
     }
         .col-1 {width: 8.33%;}
@@ -290,16 +289,22 @@ footer {
     display: grid;
 }
 
+
+#sec-foto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #mijn-foto{
-    display: grid;
-    border: solid red;
-    max-width: 45%;
+    max-width: 20%;
+    float: left;
+    padding: 20px;
+    margin: 20px;
 }
 
 #wie-ben-ik{
-    border: solid black;
-    display: grid;
-    max-width: 45%;
+    float: right;
+    max-width: 50%;
 }
 /* Footer styling */
 footer {
