@@ -30,7 +30,8 @@ body {
 
 /* Header styling */
 header {
-    margin: 0;
+    background-image: url('../afbeeldingen/low-poly-1239778_1920.jpg');
+    height: 10vh;
     padding: 50px;
     text-align: center;
 }
@@ -38,9 +39,14 @@ header {
 
  header {
         padding: 20px;
+        background-color: radial-gradient(circle, rgba(9,135,121,1) 0%, #b10a2b 100%);
         }
     
 
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 /* Navigatie styling */
 nav {
     color: white;
@@ -53,12 +59,15 @@ nav {
 
 nav ul {
     list-style-type: none;
+    width: 100%;
+    text-align: center;
     margin: 0;
     padding: 0;
     gap: 1rem;
 }
 
 nav ul li {
+    background-color: #13575c1a;
     padding: 1rem;
     list-style-type: none;
  }
@@ -97,7 +106,7 @@ h1 , h2{
 
  /* Mijn foto styling op de homepagina */
 #mijn-foto-home {
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
     border-radius: 50%;
     border: solid 2px #64e2cdef;
@@ -113,6 +122,7 @@ h1 , h2{
 .sec-main {
     padding: 3rem 1rem;
     text-align: center;
+    width: 100%;
 }
                 /* Hoofdtekst styling in de main section */
 .sec-main h1 {
@@ -159,13 +169,9 @@ h1 , h2{
 .project , .contact ,.intro {
     padding: 2rem;
     margin: 10px;
-    background-color: #f9f9f91a;
+    background-color: #13575c1a;
 }
-                /* Paragrafen styling van de pagina's */
-.project ul, .contact ul ,.intro ul {
-    list-style-type: none;
-    padding: 0;
-}
+        
                 /* Links in de paragrafen styling van de pagina's*/
 .project a, .contact a {
     text-decoration: none;
@@ -243,7 +249,7 @@ textarea {
 
 /* Footer styling */
 footer {
-    background-color: #9c9c9c2a;
+    background-color: #13575c1a;
     color:#333;
     text-align: center;
     padding: 1rem;
