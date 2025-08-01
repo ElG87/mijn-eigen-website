@@ -86,7 +86,7 @@ main {
 }
 
 h1 , h2{
-    color: #098879;
+    color: #096e63;
     text-shadow: 0 1px 1px #080808;
 }
 
@@ -127,6 +127,33 @@ h1 , h2{
 
 .ik-ben{
     display: block;
+}
+
+#container-kenmerken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mijn-kenmerken {
+    flex: 1;
+    padding: 2rem;
+    background-color: #13575c1a;
+}
+
+#mijn-kenmerken ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#mijn-kenmerken, #mijn-vaardigheden, #mijn-achtergrond {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #86cebc1a;
+    border-radius: 2rem;
+    
+    
 }
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
@@ -286,7 +313,10 @@ footer {
     }
 
     .sec-main-over-mij {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 
@@ -294,6 +324,9 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: double #0808085d;
+    box-shadow: 0 0rem 2rem #080808;
+    border-radius: 3rem 0;
 }
 #mijn-foto{
     max-width: 20%;
@@ -306,6 +339,33 @@ footer {
     float: right;
     max-width: 50%;
 }
+
+.ik-ben{
+    margin: 0;
+}
+
+#container-kenmerken {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 2rem;
+}
+
+
+
+#mijn-kenmerken {
+    flex: 1;
+}
+
+#mijn-vaardigheden {
+    flex: 1;
+}
+
+#mijn-achtergrond {
+    flex: 0 0 100%;
+}
+
+
 /* Footer styling */
 footer {
     background-color: #9c9c9c2a;
