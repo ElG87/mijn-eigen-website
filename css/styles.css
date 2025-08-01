@@ -288,6 +288,12 @@ footer {
 #sec-foto{
     max-width: 50%;
 }
+
+#wie-ben-ik{
+    max-width: 50%;
+    padding: 0%;
+    margin: 0%;
+}
 /* Footer styling */
 footer {
     background-color: #9c9c9c2a;
