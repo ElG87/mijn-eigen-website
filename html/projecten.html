@@ -7,23 +7,25 @@
     <title>Mijn projecten</title>
 </head>
 <body>
-    <!-- Header -->
+     <!-- Header -->
         <header>
  <!-- Navigatiebalk -->
-        <nav>
+  <!-- Hamburger knop -->
+  <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav id="nav-menu">
             <ul>
-                <li><a id="over-mij-link" href="overmij.html">Over mij</a></li>
-                <li><a id="project-link" href="#">Projecten</a></li>
+                <li><a id="over-mij-link" href="#">Over mij</a></li>
+                <li><a id="project-link" href="projecten.html">Projecten</a></li>
                 <li><a id="contact-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
         </header>
             <!-- Inhoud van de pagina -->
     <main>
-            <div>
-                <p id="home">Terug naar home</p>
-            </div>
-
+        <div>
+            <button id="home">Terug naar home</button>
+        </div>
             <section id="projecten" class="sec-main">
             <h1>Projecten</h1>
             <br>
@@ -35,7 +37,7 @@
                 </p>
                 <br>
                 <ul>
-                    <button id="gh-examen"><a href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op <u>Github</u></a></button>
+                    <button id="gh-examen"><a href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op Github</a></button>
                 </ul>
             </div>
             <div class="project">
@@ -80,6 +82,6 @@
         </footer >
         </div>
     <!-- Scripts met o.a. Javascript -->
-    <script src="..js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

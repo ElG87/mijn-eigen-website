@@ -1,3 +1,10 @@
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+});
+
 function overMijFoto() {
 const mijnFoto = document.getElementById("mijn-foto-home");
 if (!mijnFoto) return; //Als het element met id "mijn-foto-home" niet bestaat, stop de functie
@@ -86,3 +93,4 @@ function naarBlog() {
     }
 )};
 naarBlog();
+
