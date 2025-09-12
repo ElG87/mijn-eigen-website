@@ -37,3 +37,13 @@ function naarHome() {
     }
 )};
 naarHome();
+
+function naarExamen() {
+    const examenLink = document.getElementById("gh-examen");
+    if (!examenLink) return; //Als het element met id "gh-examen" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    examenLink.addEventListener("click", function() {
+        window.location.href = "https://elg87.github.io/ex-school/";
+    }
+)};
+naarExamen();
