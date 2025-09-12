@@ -66,3 +66,12 @@ function naarReactVercel() {
     }
 )};
 naarReactVercel();
+function naarReactGithub() {
+    const reactGithubLink = document.getElementById("react-github");
+    if (!reactGithubLink) return; //Als het element met id "react-github" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    reactGithubLink.addEventListener("click", function() {
+        window.location.href = "https://github.com/ElG87/Mijn-react-project";
+    }
+)};
+naarReactGithub();
