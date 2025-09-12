@@ -10,7 +10,7 @@ const mijnFoto = document.getElementById("mijn-foto-home");
 if (!mijnFoto) return; //Als het element met id "mijn-foto-home" niet bestaat, stop de functie
 //voeg de click event listener toe aan het element
 mijnFoto.addEventListener("click", function() {
-    window.location.href = "../html/overmij.html";
+    window.location.href = "html/overmij.html";
 }
 )};
 overMijFoto();
