@@ -66,6 +66,7 @@ function naarReactVercel() {
     }
 )};
 naarReactVercel();
+
 function naarReactGithub() {
     const reactGithubLink = document.getElementById("react-github");
     if (!reactGithubLink) return; //Als het element met id "react-github" niet bestaat, stop de functie
@@ -75,3 +76,13 @@ function naarReactGithub() {
     }
 )};
 naarReactGithub();
+
+function naarBlog() {
+    const blogLink = document.getElementById("blog");
+    if (!blogLink) return; //Als het element met id "blog" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    blogLink.addEventListener("click", function() {
+        window.location.href = "https://eliyahspff.wordpress.com/";
+    }
+)};
+naarBlog();
