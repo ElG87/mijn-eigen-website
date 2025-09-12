@@ -11,19 +11,19 @@
     <header>
  <!-- Navigatiebalk -->
   <!-- Hamburger knop ook geschikt voor screenreaders door aria-label -->
-            <button class="hamburger" id="hamburger" aria-label="Menu openen">&#9776;</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu openen">&#9776;</button>
         <nav id="nav-menu">
             <ul>
-                <li><a id="over-mij-link" href="html/overmij.html">Over mij</a></li>
-                <li><a id="project-link" href="html/projecten.html">Projecten</a></li>
-                <li><a id="contact-link" href="html/contact.html">Contact</a></li>
+                <li><a id="over-mij-link" href="overmij.html">Over mij</a></li>
+                <li><a id="project-link" href="projecten.html">Projecten</a></li>
+                <li><a id="contact-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
         </header>
             <!-- Inhoud van de pagina -->
     <main>
         <div>
-            <button id="home">Terug naar home</button>
+            <a id="home" class="button">Terug naar home</a>
         </div>
             <section id="projecten" class="sec-main">
             <h1>Projecten</h1>
@@ -36,7 +36,7 @@
                 </p>
                 <br>
                 <ul>
-                    <button id="gh-examen"><a href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op Github</a></button>
+                    <a id="gh-examen" class="button" href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op Github</a>
                 </ul>
             </div>
             <div class="project">
@@ -45,7 +45,7 @@
                 <p>Via The Odin Project heb ik ook verschillende projecten gebouwd zoals: </p>
                 <br>
                 <ul>
-                    <button id="odin-recipes"><a href="https://elg87.github.io/odin-recipes/" target="_blank">Website met recepten</a></button>
+                    <a id="odin-recipes" class="button" href="https://elg87.github.io/odin-recipes/" target="_blank">Website met recepten</a></a>
                 </ul>
                 </div>
                 <div class="project">
@@ -54,8 +54,8 @@
                     <p>Dit betreft een project waarin ik een website over mij maak, maar dan met React. <br>Deze is tevens te zien via Vercel</p>
                     <br>
                     <ul>
-                        <button id="react-vercel"><a href="https://vercel.com/ellys-projects-e9385c7d/mijn-react-project">Mijn React project op Vercel</a></button>
-                        <button id="react-github"><a href="https://github.com/ElG87/Mijn-react-project">Mijn React project op Github</a></button>
+                        <a id="react-vercel" class="button" href="https://vercel.com/ellys-projects-e9385c7d/mijn-react-project">Mijn React project op Vercel</a></a>
+                        <a id="react-github" class="button" href="https://github.com/ElG87/Mijn-react-project">Mijn React project op Github</a></a>
                     </ul>
                 </div>
 <div class="project">
@@ -64,7 +64,7 @@
                 <p>In 2017 was ik begonnen met een blog voor mijzelf te maken. Dit was gewoon een hobby die ik toen begonnen was: </p>
                 <br>
                 <ul>
-                    <button><a href="https://eliyahspff.wordpress.com/" target="_blank">Mijn blog</a></button>
+                    <a class="button" href="https://eliyahspff.wordpress.com/" target="_blank">Mijn blog</a></a>
                 </ul>
                 </div>
             </section>
@@ -78,10 +78,9 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/elly.gomes-89b9b473">LinkedIn</a></li>
             </ul>
-        </footer >
+        </footer>
         </div>
     <!-- Scripts met o.a. Javascript -->
-        <script src="js/script.js" defer></script>
     <script src="/mijn-eigen-website/js/script.js" defer></script>
 </body>
 </html>
