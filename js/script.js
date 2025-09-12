@@ -1,3 +1,21 @@
+// GitHub Pages repository root
+const repoRoot = "/mijn-eigen-website/";
+
+// Interne links
+setLink("mijn-foto-home", `${repoRoot}html/overmij.html`);
+setLink("home", `${repoRoot}index.html`);
+setLink("over-mij-link", `${repoRoot}html/overmij.html`);
+setLink("project-link", `${repoRoot}html/projecten.html`);
+setLink("contact-link", `${repoRoot}html/contact.html`);
+
+// Externe projecten/blog links
+setLink("gh-examen", "https://elg87.github.io/ex-school/");
+setLink("odin-recipes", "https://elg87.github.io/odin-recipes/");
+setLink("react-vercel", "https://vercel.com/ellys-projects-e9385c7d/mijn-react-project");
+setLink("react-github", "https://github.com/ElG87/Mijn-react-project");
+setLink("blog", "https://eliyahspff.wordpress.com/");
+
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
