@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dynamische root
     const scripts = document.getElementsByTagName('script');
     const thisScript = scripts[scripts.length - 1].src;
-    const repoRoot = window.location.pathname.startsWith("/mijn-eigen-website/") 
-                 ? "/mijn-eigen-website/" 
-                 : "/";
+    const repoRoot = thisScript.substring(0, thisScript.lastIndexOf("/js/") + 1);
 
     // Hamburger-menu
     const hamburger = document.getElementById('hamburger');
@@ -16,7 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Functie voor links
+    // Klikbare foto
+    const mijnFoto = document.getElementById("mijn-foto-home");
+    if (mijnFoto) {
+        mijnFoto.addEventListener("click", () => {
+            window.location.href = `${repoRoot}html/overmij.html`;
+        });
+    }
+
+    // Interne links
     function setLink(id, url) {
         const el = document.getElementById(id);
         if (!el) return;
@@ -26,20 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Interne links
-    setLink("index-link", `${repoRoot}index.html`);
-    setLink("mijn-foto-home", `${repoRoot}html/overmij.html`);
     setLink("home", `${repoRoot}index.html`);
     setLink("over-mij-link", `${repoRoot}html/overmij.html`);
     setLink("project-link", `${repoRoot}html/projecten.html`);
     setLink("contact-link", `${repoRoot}html/contact.html`);
 
-    // Externe links
-    setLink("gh-examen", "https://elg87.github.io/ex-school/");
-    setLink("odin-recipes", "https://elg87.github.io/odin-recipes/");
-    setLink("react-vercel", "https://vercel.com/ellys-projects-e9385c7d/mijn-react-project");
-    setLink("react-github", "https://github.com/ElG87/Mijn-react-project");
-    setLink("blog", "https://eliyahspff.wordpress.com/");
+
 
     // Leeftijd berekenen
     const leeftijdElement = document.getElementById("leeftijd");
