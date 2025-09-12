@@ -300,7 +300,7 @@ footer {
     a #home-link{
         display: flex;
         justify-content: center;
-        align-self: left;
+        align-self: right;
     }
 
     a:hover {
