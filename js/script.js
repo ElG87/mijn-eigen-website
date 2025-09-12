@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    setLink("home", `${repoRoot}index.html`);
+    setLink("home", `${repoRoot}../index.html`);
     setLink("over-mij-link", `${repoRoot}html/overmij.html`);
     setLink("project-link", `${repoRoot}html/projecten.html`);
     setLink("contact-link", `${repoRoot}html/contact.html`);
@@ -53,3 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    if (navMenu) {
+        navMenu.classList.toggle('open');
+    }
+};
