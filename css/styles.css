@@ -289,6 +289,7 @@ footer {
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: right;
         gap: 1rem;
     }
 
@@ -296,13 +297,7 @@ footer {
         color: rgb(53, 52, 52);
         text-decoration: none;
     }
-    /* Nog niet zeker over deze link styling*/
-    a #home-link{
-        display: flex;
-        justify-content: center;
-        align-self: right;
-    }
-
+    
     a:hover {
         text-decoration: underline;
     }
