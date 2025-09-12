@@ -1,6 +1,14 @@
-// GitHub Pages repository root
-const repoRoot = "/mijn-eigen-website/";
+// Bepaal automatisch de root map
+const repoRoot = window.location.hostname === "elg87.github.io" ? "/mijn-eigen-website/" : "/";
 
+// Helperfunctie voor interne links
+function setLink(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener("click", () => {
+        window.location.href = url;
+    });
+}
 // Interne links
 setLink("mijn-foto-home", `${repoRoot}html/overmij.html`);
 setLink("home", `${repoRoot}index.html`);
