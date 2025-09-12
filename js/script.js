@@ -47,3 +47,12 @@ function naarExamen() {
     }
 )};
 naarExamen();
+function naarOdinRecipes() {
+    const odinRecipesLink = document.getElementById("odin-recipes");
+    if (!odinRecipesLink) return; //Als het element met id "odin-recipes" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    odinRecipesLink.addEventListener("click", function() {
+        window.location.href = "https://elg87.github.io/odin-recipes/";
+    }
+)};
+naarOdinRecipes();
