@@ -28,3 +28,12 @@ function huidigeLeeftijd() {
 };
 huidigeLeeftijd();
 
+function naarHome() {
+    const homeLink = document.getElementById("home");
+    if (!homeLink) return; //Als het element met id "home" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    homeLink.addEventListener("click", function() {
+        window.location.href = "../index.html";
+    }
+)};
+naarHome();
