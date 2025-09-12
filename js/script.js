@@ -56,3 +56,13 @@ function naarOdinRecipes() {
     }
 )};
 naarOdinRecipes();
+
+function naarReactVercel() {
+    const reactVercelLink = document.getElementById("react-vercel");
+    if (!reactVercelLink) return; //Als het element met id "react-vercel" niet bestaat, stop de functie
+    //voeg de click event listener toe aan het element
+    reactVercelLink.addEventListener("click", function() {
+        window.location.href = "https://vercel.com/ellys-projects-e9385c7d/mijn-react-project";
+    }
+)};
+naarReactVercel();
