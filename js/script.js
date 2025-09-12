@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-    
-    hamburger?.addEventListener('click', () => {
-        navMenu?.classList.toggle('open');
-    });
 
-    const repoRoot = window.location.hostname === "elg87.github.io" ? "/mijn-eigen-website/" : "/";
+// Detecteer of de site op GitHub Pages draait
+const repoRoot = window.location.hostname === "elg87.github.io" ? "/mijn-eigen-website/" : "/";
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+    // Controleer of de elementen bestaan
+    if (hamburger && navMenu) {
+        // Klik event voor hamburger
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open'); // Voeg/haal de 'open'-class toe
+        });
+    }
+
 
     function setLink(id, url) {
         const el = document.getElementById(id);
@@ -28,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setLink("react-github", "https://github.com/ElG87/Mijn-react-project");
     setLink("blog", "https://eliyahspff.wordpress.com/");
 
+
+    
     function huidigeLeeftijd() {
         const leeftijdElement = document.getElementById("leeftijd");
         if (!leeftijdElement) return;
