@@ -42,34 +42,29 @@ header {
     }
     
 #logo {
-    height: 60px;
+    height: 75px;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 1rem;
+    left: 1rem;
     cursor: pointer;
-    background-image: url(../afbeeldingen/ai-generated-8989592_1920.jpg);
-    background-size: cover;
+    background-position: center;
+    width: auto; 
     border-radius: 50%;
+    border: #0e0f0f solid 2px;
+    box-shadow: #080808 5px 4px 10PX   ;
 }
 
-#logo::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: rgba(0,0,0,0.3); /* donkere overlay */
-}
+
 /* Hamburger knop */
 .hamburger {
-  font-size: 28px;
+  font-size: 20px;
   background: none;
   border: none;
-  color: white;
+  color: rgb(14, 12, 12);
   cursor: pointer;
   z-index: 1100;
   position: absolute;
-  top: 20px;   
+  top: 3rem;   
   left: 50%; 
 }
 
@@ -77,10 +72,9 @@ header {
 #nav-menu {
   display: none;
   position: absolute;
-  top: 60px;    
-  right: 20px;  
-  background: rgba(9, 136, 121, 0.95);
-  border-radius: 8px;
+  top: 1rem;    
+  right: 1rem;  
+  background: rgba(10, 71, 64, 0.541);
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   padding: 10px;
   z-index: 1000;
@@ -88,6 +82,8 @@ header {
 
 #nav-menu.open {
   display: block;
+    background: rgba(32, 160, 143, 0.774);
+
 }
 
 #nav-menu ul {
@@ -321,6 +317,8 @@ footer {
     width: 100%;
 }
 
+
+
 /* Media queries voor responsieve styling vanaf tabletgrootte*/
 @media screen and (min-width: 768px) {
     
@@ -328,10 +326,32 @@ footer {
         padding: 20px;
     }
 
-    .hamburger {
-        left: auto; 
-        right: 1rem;
+    #logo {
+        height: 11%;
+        top: 2%;
+        left: 5%;
+        z-index: 1200;
     }
+
+    #hamburger {
+        position: absolute;
+        top: 5%;
+        left: auto;
+        right: 10%;
+        font-size: 50px;
+        color: rgb(9, 95, 84);
+    }
+
+#nav-menu {
+  display: none;
+  position: absolute;
+  top: 15%;    
+  left: auto;  
+  background: rgba(9, 136, 121, 0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  padding: 10px;
+  z-index: 1200;
+}
 
     /* Navigatie styling */
     nav {
@@ -363,10 +383,11 @@ footer {
     }
 
     #mijn-foto-home {
-    height: 25rem;
+    height: 500px;
+    width: auto;
     border-radius: 50%;
-    border: solid 2px #64e2cdef;
-    box-shadow: 10px 4px 20px rgb(0, 0, 0);
+    border: solid 2px #182926ef;
+    box-shadow: 10px 4px 20px rgb(29, 63, 56);
     }
 
     #mijn-foto-home:hover {
@@ -393,8 +414,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: double #0808085d;
-    box-shadow: 0 0rem 2rem #080808;
     border-radius: 3rem 0;
 }
 #mijn-foto{
@@ -419,8 +438,6 @@ footer {
     flex-direction: column-reverse;
     padding: 2rem;
 }
-
-
 
 #mijn-kenmerken , #mijn-vaardigheden , #mijn-achtergrond {
     flex: 1;
