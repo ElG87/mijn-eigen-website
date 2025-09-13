@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setLink("over-mij-link", `${repoRoot}html/overmij.html`);
     setLink("project-link", `${repoRoot}html/projecten.html`);
     setLink("contact-link", `${repoRoot}html/contact.html`);
+    setLink("logo", `${repoRoot}index.html`);
 
 
 
