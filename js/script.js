@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    if (navMenu) {
+        navMenu.classList.toggle('open');
+    }
+};
+
     // Interne links
      function setLink(id, url) {
     const el = document.getElementById(id);
@@ -21,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     el.addEventListener("click", () => {
       window.location.href = url;
-      
+
     });
     }
 
-    setLink("home", `${repoRoot}../index.html`);
+    setLink("home", `${repoRoot}index.html`);
     setLink("mijn-foto-home", `${repoRoot}html/overmij.html`);
     setLink("over-mij-link", `${repoRoot}html/overmij.html`);
     setLink("project-link", `${repoRoot}html/projecten.html`);
@@ -48,9 +55,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    if (navMenu) {
-        navMenu.classList.toggle('open');
-    }
-};
+
