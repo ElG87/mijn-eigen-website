@@ -50,16 +50,16 @@ header {
   cursor: pointer;
   z-index: 1100;
   position: absolute;
-  top: 20px;   /* afstand vanaf bovenkant */
-  right: 20px; /* afstand vanaf rechterkant */
+  top: 20px;   
+  left: 50%; 
 }
 
 /* Menu standaard verborgen */
 #nav-menu {
   display: none;
   position: absolute;
-  top: 60px;    /* net onder de hamburger */
-  right: 20px;  /* uitgelijnd met hamburger */
+  top: 60px;    
+  right: 20px;  
   background: rgba(9, 136, 121, 0.95);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -179,8 +179,14 @@ h1 , h2{
     margin: 2rem 0;
     background-color: #86cebc1a;
     border-radius: 2rem;
-    
-    
+}
+
+svg {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    color: #096e63;
 }
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
@@ -290,6 +296,11 @@ footer {
         padding: 20px;
     }
 
+    .hamburger {
+        left: auto; 
+        right: 1rem;
+    }
+
     /* Navigatie styling */
     nav {
         color: white;
@@ -317,6 +328,13 @@ footer {
 
     a:hover {
         text-decoration: underline;
+    }
+
+    #mijn-foto-home {
+    height: 25rem;
+    border-radius: 50%;
+    border: solid 2px #64e2cdef;
+    box-shadow: 10px 4px 20px rgb(0, 0, 0);
     }
 
     #mijn-foto-home:hover {
@@ -377,7 +395,6 @@ footer {
     border-radius: 0 3rem ;
     min-width: 100%;
 }
-
 
 /* Footer styling */
 footer {

@@ -1,38 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Detecteer of we lokaal of op GitHub Pages draaien
+  const repoRoot = window.location.hostname === "elg87.github.io"
+    ? "/mijn-eigen-website/"
+    : "/";
 
-    // Dynamische root
-    const scripts = document.getElementsByTagName('script');
-    const thisScript = scripts[scripts.length - 1].src;
-    const repoRoot = thisScript.substring(0, thisScript.lastIndexOf("/js/") + 1);
+  // Hamburger menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
 
-    // Hamburger-menu
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('open');
-        });
-    }
-
-    // Klikbare foto
-    const mijnFoto = document.getElementById("mijn-foto-home");
-    if (mijnFoto) {
-        mijnFoto.addEventListener("click", () => {
-            window.location.href = `${repoRoot}html/overmij.html`;
-        });
-    }
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+  }
 
     // Interne links
-    function setLink(id, url) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.addEventListener("click", (e) => {
-            e.preventDefault();
-            window.location.href = url;
-        });
+     function setLink(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.addEventListener("click", () => {
+      window.location.href = url;
+      
+    });
     }
 
     setLink("home", `${repoRoot}../index.html`);
+    setLink("mijn-foto-home", `${repoRoot}html/overmij.html`);
     setLink("over-mij-link", `${repoRoot}html/overmij.html`);
     setLink("project-link", `${repoRoot}html/projecten.html`);
     setLink("contact-link", `${repoRoot}html/contact.html`);
