@@ -242,10 +242,8 @@ svg {
 
 /* Afbeelding styling op de projectenpagina */
 #landing-page-img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    border-radius: 10px;
-    border: solid 2px #64e2cdef;
     box-shadow: 10px 4px 20px rgb(0, 0, 0);
     margin-top: 1rem;
 }
