@@ -135,7 +135,6 @@ h1 , h2{
 .button {
     background-image: url('../afbeeldingen/low-poly-1239778_1920.jpg');
     border: solid 2px #0e0f0f;
-    color: rgb(10, 10, 10);
     padding: 5px 10px;
     text-align: center;
     text-decoration: none; /* Zorgt dat link geen underline heeft */
@@ -147,7 +146,7 @@ h1 , h2{
     box-shadow: 0 2px #1b4634;
 }
 
-#gh-examen , #odin-recipes, #react-vercel, #react-github, #blog {
+#gh-examen , #odin-recipes,#landing-page-odin, #react-vercel, #react-github, #blog {
     color: rgb(102, 185, 164);
     text-decoration: none;
 }
@@ -208,7 +207,7 @@ h1 , h2{
     background-color: #86cebc1a;
     border-radius: 2rem;
 }
-
+/* iconen in de kenmerken lijst */
 svg {
     width: 1.5em;
     height: 1.5em;
@@ -241,6 +240,15 @@ svg {
     box-shadow: 10px 4px 20px rgb(0, 0, 0);
 }
 
+/* Afbeelding styling op de projectenpagina */
+#landing-page-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid 2px #64e2cdef;
+    box-shadow: 10px 4px 20px rgb(0, 0, 0);
+    margin-top: 1rem;
+}
 /* Formulier styling */
                 /* Algemene formulier styling */
 form { 
