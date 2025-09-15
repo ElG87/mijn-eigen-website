@@ -5,6 +5,16 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
   [class*="col-"] {
         padding: 15px;
     }
@@ -388,19 +398,15 @@ footer {
         text-decoration: underline;
     }
 
+     #sec-main {
+        display: flex;  
+        align-items: center;
+    }
+
     #mijn-foto-home {
-    height: 400px;
-    width: 600px;
     border-radius: 10%;
     border: solid 2px #182926ef;
     box-shadow: 10px 4px 20px rgb(29, 63, 56);
-    }
-
-    #sec-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     #mijn-foto-home:hover {
@@ -413,9 +419,6 @@ footer {
         font-size: 20px;
         padding: 4rem 2rem;
     }
-
-   
-
 
 #sec-foto{
     display: flex;
