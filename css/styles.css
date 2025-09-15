@@ -389,11 +389,18 @@ footer {
     }
 
     #mijn-foto-home {
-    height: 500px;
-    width: auto;
-    border-radius: 50%;
+    height: 400px;
+    width: 600px;
+    border-radius: 10%;
     border: solid 2px #182926ef;
     box-shadow: 10px 4px 20px rgb(29, 63, 56);
+    }
+
+    #sec-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     #mijn-foto-home:hover {
@@ -407,13 +414,7 @@ footer {
         padding: 4rem 2rem;
     }
 
-    .sec-main-over-mij {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
+   
 
 
 #sec-foto{
