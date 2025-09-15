@@ -5,16 +5,6 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.roboto-font {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
   [class*="col-"] {
         padding: 15px;
     }
@@ -32,7 +22,7 @@
         .col-12 {width: 100%;}
     
 body {
-    background: linear-gradient(90deg, #098879, #b3e5fc);
+    background: linear-gradient(120deg,  #098879, #b3e5fc);
     color: #222;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -40,6 +30,7 @@ body {
 
 /* Header styling */
 header {
+    /*
     background-image: url('../afbeeldingen/low-poly-1239778_1920.jpg');
     height: 15vh;
     padding: 50px;
@@ -49,7 +40,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+    }*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    height: 10vh;
+    color: white;
+    position: static;
+    top: 0;
+    z-index: 1000;
+
+    /* Subtiele schaduw voor diepte */
+    box-shadow: 0 15px 60px rgba(248, 250, 250, 0.712);
+}
     
 #logo {
     height: 75px;
@@ -129,15 +135,15 @@ h1 , h2{
 }
 
 #welkom {
-    text-align: center;
-    margin-bottom: 2rem;
+    justify-self: center;
+    margin: 2rem;
 }
 
  /* Mijn foto styling op de homepagina */
 #mijn-foto-home {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
     border: solid 2px #161d1cef;
     box-shadow: 10px 4px 20px rgb(0, 0, 0);
 }
@@ -398,12 +404,25 @@ footer {
         text-decoration: underline;
     }
 
-     #sec-main {
-        display: flex;  
-        align-items: center;
+/* Styling voor homepagina */
+
+ #sec-main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
+.sec-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+/* Styling voor afbeelding op de homepagina */
     #mijn-foto-home {
+    min-width: 100%;
     border-radius: 10%;
     border: solid 2px #182926ef;
     box-shadow: 10px 4px 20px rgb(29, 63, 56);
@@ -414,11 +433,22 @@ footer {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+/* Styling voor 'Over mij'-pagina */
+
     main {
         font-family: Arial, sans-serif;
         font-size: 20px;
         padding: 4rem 2rem;
     }
+
+    .sec-main-over-mij {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
 
 #sec-foto{
     display: flex;
@@ -470,4 +500,53 @@ footer {
     text-align: center;
     margin: 0;}
 
+}
+
+@media screen and (min-width: 1440px) {
+    #logo {
+        height: 12%;
+        top: 2%;
+        left: 5%;
+    }
+
+    #hamburger {
+        position: absolute;
+        top: 5%;
+        left: auto;
+        right: 10%;
+        font-size: 60px;
+        color: rgb(9, 95, 84);
+    }
+
+    .sec-main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    
+.welkom {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 2rem;
+    align-self: center;
+}   
+
+#welkom{
+    font-size: 6rem;
+}
+    .sec-foto {
+        justify-self: center;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+    #mijn-foto-home {
+    min-width: 100%;
+    }
+
+    .intro{
+    font-size: 28px;
+
+    }
 }
