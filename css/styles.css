@@ -255,7 +255,7 @@ svg {
     border-radius: 20px;
 }
 
-.project-header:active {
+.project-header.active {
     opacity: 0.6;
 }
 
@@ -266,6 +266,18 @@ svg {
     text-shadow: 0 1px 2px #080808;
     flex: 1;
 }
+
+.arrow {
+    font-size: 1.5em;
+    color: #14595e;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
 .project-content {
     max-height: 0;
     overflow: hidden;
@@ -481,10 +493,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-
-
+    }
 
 #sec-foto{
     display: flex;
@@ -492,6 +501,7 @@ footer {
     align-items: center;
     border-radius: 3rem 0;
 }
+
 #mijn-foto{
     max-width: 20%;
     float: left;
@@ -526,6 +536,25 @@ footer {
     transform: translateY(-5px);
 }
 
+.project-header {
+    padding: 20px;  
+    background: linear-gradient(120deg,  #1d7777, #67beb4);
+    border-radius: 20px;
+}
+
+.project-header h3 {
+    font-size: 1.5em;
+}
+
+.project-content {
+    padding: 10px 20px;
+}
+
+.project.content.active {
+padding: 20px;
+}
+
+
 #landing-page-img {
     max-width: 70%;
     height: auto;
@@ -559,8 +588,8 @@ footer {
         padding: 20px;
         height: 15vh;
         background-color: teal;
-
     }
+
     #logo {
         height: 12%;
         top: 2%;
@@ -589,16 +618,16 @@ footer {
     align-self: center;
 }   
 
-#welkom{
+#welkom {
     font-size: 6rem;
     font-family: 'Playfair Display', roboto;
-    color: #223838f5;
-}
+    color: #223838f5;}
+
     .sec-foto {
     justify-self: center;
     min-width: 800px;
     max-width: 800px;
-}
+    }
 
     #mijn-foto-home {
     min-width: 100%;
@@ -606,6 +635,13 @@ footer {
 
     .intro{
     font-size: 28px;
+    }
 
+    .project {
+        margin-bottom: 25px;
+    }
+
+    .project-header h3 {
+    font-size: 1.8em;   
     }
 }
