@@ -22,7 +22,7 @@
         .col-12 {width: 100%;}
     
 body {
-    background: linear-gradient(120deg,  #098879, #b3e5fc);
+    background: linear-gradient(120deg,  #3b96b9b4, #b3e5fc);
     color: #222;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -128,7 +128,6 @@ h1 , h2{
 }
 
 #welkom {
-    
     justify-self: center;
     margin: 2rem;
 }
@@ -178,6 +177,7 @@ h1 , h2{
     text-align: center;
     width: 100%;
 }
+
                 /* Hoofdtekst styling in de main section */
 .sec-main h1 {
     font-size: 2.5rem;
@@ -189,7 +189,7 @@ h1 , h2{
     margin: 1rem;
 }
 
-.ik-ben{
+.ik-ben {
     display: block;
 }
 
@@ -217,6 +217,7 @@ h1 , h2{
     background-color: #86cebc1a;
     border-radius: 2rem;
 }
+
 /* iconen in de kenmerken lijst */
 svg {
     width: 1.5em;
@@ -225,6 +226,7 @@ svg {
     margin-right: 0.5em;
     color: #096e63;
 }
+
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
     padding: 2rem;
@@ -294,9 +296,11 @@ svg {
     margin-top: 10px;
 }
 
-.project-content p{
+.project-content p {
     margin: 10px 0;
     line-height: 1.6;
+    word-wrap: break-word;  /* Breekt lange woorden */
+    overflow-wrap: break-word;
 }
 
 .project-content section{
@@ -556,11 +560,7 @@ footer {
 }
 
 .project-content {
-    padding: 0;
-}
-
-.arrow {
-    font-size: 1.5em;
+    padding: 10px 20px;
 }
 
 .project-content.active {
@@ -573,7 +573,7 @@ max-height: 2000px;
     max-width: 70%;
     height: auto;
     box-shadow: 10px 4px 20px rgb(0, 0, 0);
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 /* Footer styling */
