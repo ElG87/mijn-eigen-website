@@ -123,8 +123,9 @@ main {
 
 h1 , h2{
     font-family: Impact, Hae;
-    color: rgba(82, 207, 207, 0.767);
-    text-shadow: 0 10px 10px #080808;
+    color: rgba(129, 187, 187, 0.767);
+    text-align: center;
+    text-shadow: 0 2px  #080808;
 }
 
 #welkom {
@@ -253,7 +254,7 @@ svg {
     cursor: pointer;
     user-select: none;
     padding: 15px;  
-    background: linear-gradient(120deg,  #098879, #e7f0ef);
+    background: linear-gradient(120deg,  #209599, #e7f0ef);
     border-radius: 20px;
     -webkit-tap-highlight-color: transparent;
 }
@@ -265,7 +266,7 @@ svg {
 .project-header h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #14595e;
+    color: #d0e6e7;
     text-shadow: 0 1px 2px #080808;
     flex: 1;
     padding-right: 10px;
