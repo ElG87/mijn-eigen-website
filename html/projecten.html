@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Mijn projecten</title>
 </head>
 <body>
      <!-- Header -->
     <header>
         <!--Logo-->
-          <img             <img src="../afbeeldingen/mijn-eigen-logo.png" alt="Mijn logo" id="logo" id="home">
+        <img src="../afbeeldingen/mijn-eigen-logo.png" alt="Mijn logo" id="logo" id="home">
 
   <!-- Hamburger knop ook geschikt voor screenreaders door aria-label -->
         <button class="hamburger" id="hamburger" aria-label="Menu openen">&#9776;</button>
@@ -25,57 +26,70 @@
         </header>
             <!-- Inhoud van de pagina -->
     <main>
+                <!--Mijn projecten -->
             <section id="projecten" class="sec-main">
-            <h1>Projecten</h1>
-            <br>
-            <section class="project">
-                <h3>Examenopdracht</h3>
-                <br>
-                <p>
-                  Een project gebouwd als onderdeel van mijn opleiding front-end development, waarin ik mijn vaardigheden in HTML, CSS en JavaScript heb toegepast.  
-                </p>
-                <br>
-                <ul>
-                    <a id="gh-examen" class="button" href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op Github</a>
-                </ul>
-            </section>
-            <section class="project">
-                <h3>The Odin Project</h3>
-                <br>
-                <p>Via The Odin Project ben ik op dit moment nog bezig met diverse projecten zoals: </p>
-                <br>
-                <section>
-                    <a id="odin-recipes" class="button" href="https://elg87.github.io/odin-recipes/" target="_blank">Een simpele website met recepten</a>
-                </section>
-                    
-                <section>
-                    <a id="landing-page-odin" class="button" href="https://elg87.github.io/landing-page-odin" target="_blank"> Website nagemaakt door middel van onderstaande afbeelding</a>
-                    <p>*Nog niet afgerond</p>
-                    <img src="../afbeeldingen/landing-page-img.png" alt="Landing page Odin project" id="landing-page-img">
-                </section>
-                    
-                    
-                
-                </section>
+                    <h1>Projecten</h1>
+                    <br>
+                    <!--Examenopdracht-->
                 <section class="project">
-                    <h3>Eigen website met React.</h3>
-                    <br>
-                    <p>Dit betreft een project waarin ik een website over mij maak, maar dan met React.  *Binnenkort te zien<br>Deze is tevens te zien via Vercel</p>
-                    <br>
+                    <div class="project-header">
+                        <h3>Examenopdracht</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                        Een project gebouwd als onderdeel van mijn opleiding front-end development, waarin ik mijn vaardigheden in HTML, CSS en JavaScript heb toegepast.  
+                        </p>
+                    </div>
+                        <a id="gh-examen" class="button" href="https://elg87.github.io/ex-school/"target="_blank">Bekijk mijn examenwebsite op Github</a>
+                </div>
+                </section>
+                <!--The Odin Project-->
+                <section class="project">
+                    <div class="project-header">
+                    <h3>The Odin Project</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="project-content">
+                    <p>Via The Odin Project ben ik op dit moment nog bezig met diverse projecten zoals: </p>
+                    </div>
+                            <!--Recepten website Odin project-->
+                    <section>
+                        <a id="odin-recipes" class="button" href="https://elg87.github.io/odin-recipes/" target="_blank">Een simpele website met recepten</a>
+                    </section>
+                          <!--Landing page Odin project-->  
+                    <section>
+                        <a id="landing-page-odin" class="button" href="https://elg87.github.io/landing-page-odin" target="_blank"> Website nagemaakt door middel van onderstaande afbeelding</a>
+                        <p>*Nog niet afgerond</p>
+                        <img src="../afbeeldingen/landing-page-img.png" alt="Landing page Odin project" id="landing-page-img">
+                    </section>
+                </section>
+                <!--React project-->
+                <section class="project">
+                    <div class="project-header">
+                        <h3>Eigen website met React.</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Dit betreft een project waarin ik een website over mij maak, maar dan met React.  *Binnenkort te zien<br>Deze is tevens te zien via Vercel</p>
+                    </div>
+                            <!--Link naar Vercel en Github-->
+                            <a id="react-vercel" class="button" href="https://vercel.com/ellys-projects-e9385c7d/mijn-react-project">Mijn React project op Vercel</a></a>
+                            <a id="react-github" class="button" href="https://github.com/ElG87/Mijn-react-project">Mijn React project op Github</a></a>
+                </section>
+                <!--Mijn blog-->
+                <section class="project">
+                    div class="project-header">
+                        <h3>Mijn blog op Wordpress</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Een blog die ik in 2017 begonnen ben en die ik verder wil uitbreiden en verbeteren. </p>
+                    </div>
                     <ul>
-                        <a id="react-vercel" class="button" href="https://vercel.com/ellys-projects-e9385c7d/mijn-react-project">Mijn React project op Vercel</a></a>
-                        <a id="react-github" class="button" href="https://github.com/ElG87/Mijn-react-project">Mijn React project op Github</a></a>
+                        <a id="blog" class="button" href="https://eliyahspff.wordpress.com/" target="_blank">Mijn blog</a></a>
                     </ul>
-                </section>
-<section class="project">
-                <h3>Mijn blog op Wordpress</h3>
-                <br>
-                <p>In 2017 was ik begonnen met een blog voor mijzelf te maken. Dit was gewoon een hobby die ik toen begonnen was. Ook dit is een onderdeel die ik verder zal oppakken zodra ik de andere projecten af heb. Dit zal dan naar mate steeds aangepast en verbeterd worden. </p>
-                <br>
-                <ul>
-                    <a id="blog" class="button" href="https://eliyahspff.wordpress.com/" target="_blank">Mijn blog</a></a>
-                </ul>
-                </section>
+                    </section>
             </section>
     </main>
             <!-- Footer -->
