@@ -244,6 +244,45 @@ svg {
     text-decoration: underline;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;  
+    background: linear-gradient(120deg,  #098879, #e7f0ef);
+    border-radius: 20px;
+}
+
+.project-header:active {
+    opacity: 0.6;
+}
+
+.project-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #14595e;
+    text-shadow: 0 1px 2px #080808;
+    flex: 1;
+}
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3 ease;
+    margin-top: 10px;
+}
+
+.project-content p{
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.project-content section{
+    margin: 10px 0;
+}
+
+
 /* Mijn fotostyling op de 'Over mij'-pagina */
 #mijn-foto {
     max-width: 50%;
