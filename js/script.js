@@ -56,4 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+function toggleProjectContent(header) {
+    const content = header.nextElementSibling;
+    const arrow = header.querySelector('.arrow');
 
+    document.querySelectorAll('.project-content').forEach(item => {
+        if (item !== content && item.classList.contains('active')) {
+            item.classList.remove('active');
+            item.previousElementSibling.querySelector('.arrow').classList.remove('active');
+        }
+    
+    });  
+
+    content.classList.toggle('active');
+    arrow.classList.toggle('active');
+
+  };
