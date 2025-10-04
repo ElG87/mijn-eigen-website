@@ -29,7 +29,7 @@ body {
 }
 
 /* Header styling */
-header {
+#header {
     /*
     background-image: url('../afbeeldingen/low-poly-1239778_1920.jpg');
     height: 15vh;
@@ -42,16 +42,6 @@ header {
     align-items: center;
     }*/
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-
-    height: 10vh;
-    color: white;
-    position: static;
-    top: 0;
-    z-index: 1000;
 
     /* Subtiele schaduw voor diepte */
     box-shadow: 0 15px 60px rgba(248, 250, 250, 0.712);
@@ -76,7 +66,7 @@ header {
   font-size: 20px;
   background: none;
   border: none;
-  color: rgb(14, 12, 12);
+  color: rgb(71, 145, 145);
   cursor: pointer;
   z-index: 1100;
   position: absolute;
@@ -98,7 +88,9 @@ header {
 
 #nav-menu.open {
   display: block;
-    background: rgba(32, 160, 143, 0.774);
+  width: 50%;
+  text-align: center;
+    background: rgba(99, 155, 147, 0.774);
 
 }
 
@@ -130,11 +122,13 @@ main {
 }
 
 h1 , h2{
-    color: #096e63;
-    text-shadow: 0 1px 1px #080808;
+    font-family: Impact, Hae;
+    color: rgba(82, 207, 207, 0.767);
+    text-shadow: 0 10px 10px #080808;
 }
 
 #welkom {
+    
     justify-self: center;
     margin: 2rem;
 }
@@ -346,6 +340,7 @@ footer {
     
     header {
         padding: 20px;
+        height: 20vh;
     }
 
     #logo {
@@ -361,7 +356,6 @@ footer {
         left: auto;
         right: 10%;
         font-size: 50px;
-        color: rgb(9, 95, 84);
     }
 
 #nav-menu {
@@ -503,6 +497,13 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+
+    header {
+        padding: 20px;
+        height: 15vh;
+        background-color: teal;
+
+    }
     #logo {
         height: 12%;
         top: 2%;
@@ -514,8 +515,7 @@ footer {
         top: 5%;
         left: auto;
         right: 10%;
-        font-size: 60px;
-        color: rgb(9, 95, 84);
+        font-size: 40px;
     }
 
     .sec-main{
@@ -534,6 +534,8 @@ footer {
 
 #welkom{
     font-size: 6rem;
+    font-family: 'Rock Salt', roboto;
+    color: #526464f5;
 }
     .sec-foto {
         justify-self: center;
