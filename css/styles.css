@@ -498,6 +498,10 @@ footer {
 
 @media screen and (min-width: 1440px) {
 
+    body{
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+    }
     header {
         padding: 20px;
         height: 15vh;
@@ -534,11 +538,11 @@ footer {
 
 #welkom{
     font-size: 6rem;
-    font-family: 'Rock Salt', roboto;
-    color: #526464f5;
+    font-family: 'Playfair Display', roboto;
+    color: #223838f5;
 }
     .sec-foto {
-        justify-self: center;
+    justify-self: center;
     min-width: 800px;
     max-width: 800px;
 }
