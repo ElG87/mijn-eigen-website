@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
 }
   [class*="col-"] {
         padding: 15px;
@@ -127,9 +127,14 @@ main {
 
 h1 , h2{
     font-family: Impact, Hae;
-    color: rgba(129, 187, 187, 0.767);
+    color: rgba(113, 168, 168, 0.767);
     text-align: center;
     text-shadow: 0 2px  #080808;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a8581;
+    text-shadow: 0 1px  #080808;
 }
 
 .intro{
@@ -408,9 +413,12 @@ footer {
     padding: 1rem;
     margin: 0;
     width: 100%;
-    text-decoration: none;
 }
 
+#linked-in a {
+    color: rgb(102, 185, 164);
+    text-decoration: none;
+}
 
 
 /* Media queries voor responsieve styling vanaf tabletgrootte*/
