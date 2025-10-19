@@ -1,10 +1,14 @@
 /* Basisstyling voor alles */
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #94eaf0;
 }
+li{
+    list-style: none;
+}
+
   [class*="col-"] {
         padding: 15px;
     }
@@ -20,39 +24,24 @@
         .col-10 {width: 83.33%;}
         .col-11 {width: 91.66%;}
         .col-12 {width: 100%;}
-    
-
-      
         
 body {
-    background: linear-gradient(120deg,  #3b96b9b4, #b3e5fc);
-    color: #222;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #81d4d4, #047e7ef8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+font-size: 16px;
+    margin: 0;
 }
 
-/* Header styling */
-#header {
-    /*
-    background-image: url('../afbeeldingen/low-poly-1239778_1920.jpg');
-    height: 15vh;
-    padding: 50px;
-    text-align: center;
-    padding: 20px;
-    background-color: radial-gradient(circle, rgba(9,135,121,1) 0%, #b10a2b 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }*/
-
-
-    /* Subtiele schaduw voor diepte */
-    box-shadow: 0 15px 60px rgba(248, 250, 250, 0.712);
-}
+header {
+        padding: 20px;
+        height: 10vh;
+    }
 
 
 #logo {
-    height: 75px;
+    height: 20%;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -109,7 +98,6 @@ body {
 
 #nav-menu li a {
   color: white;
-  text-decoration: none;
   display: block;
   padding: 10px 20px;
 }
@@ -120,19 +108,17 @@ body {
 
 /* Main styling */
 main {
-    font-family: Arial, sans-serif;
     font-size: 20px;
-    padding: 2rem 2rem;
+    padding: 1rem;
+    
 }
 
 h1 , h2{
-    font-family: Impact, Hae;
     color: rgba(113, 168, 168, 0.767);
     text-align: center;
     text-shadow: 0 2px  #080808;
 }
 h3 {
-    font-family: 'Montserrat', sans-serif;
     color: #4a8581;
     text-shadow: 0 1px  #080808;
 }
@@ -190,7 +176,6 @@ h3 {
 .sec-main {
     padding: 3rem 1rem;
     text-align: center;
-    width: 100%;
 }
 
                 /* Hoofdtekst styling in de main section */
@@ -245,10 +230,9 @@ svg {
 
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
-    padding: 2rem;
+    padding: 1rem;
     margin: 10px;
     border-radius: 10px;
-    overflow: hidden;
     transition: all 0.3s ease;
     background-color: #13575c1a;
 }
@@ -261,6 +245,7 @@ svg {
 .project a:hover , .contact a:hover ,.intro a:hover {
     text-decoration: underline;
 }
+
 
 .project-title h1 {
     font-size: 3rem;
@@ -422,9 +407,9 @@ footer {
     width: 100%;
 }
 
-#linked-in a {
-    color: rgb(102, 185, 164);
-    text-decoration: none;
+.linked-in a {
+    color: rgb(28, 83, 70);
+    font-weight: bold;
 }
 
 
@@ -479,7 +464,6 @@ footer {
 
     a {
         color: rgb(247, 243, 243);
-        text-decoration: none;
     }
 
     a:hover {
@@ -622,8 +606,7 @@ footer {
     }
     header {
         padding: 20px;
-        height: 15vh;
-        background-color: teal;
+        height: 30vh;
     }
 
     #logo {
