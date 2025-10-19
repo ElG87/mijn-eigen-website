@@ -242,6 +242,7 @@ svg {
     color: #096e63;
 }
 
+
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
     padding: 2rem;
@@ -261,6 +262,12 @@ svg {
     text-decoration: underline;
 }
 
+.project-title h1 {
+    font-size: 3rem;
+    color: #166464f5;
+    text-shadow: 0 2px  #080808;
+    margin-bottom: 1rem;
+}
 .project-header {
     display: flex;
     justify-content: space-between;
@@ -637,6 +644,7 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     }
     
 .welkom {
@@ -650,7 +658,8 @@ footer {
 #welkom {
     font-size: 6rem;
     font-family: 'Playfair Display', roboto;
-    color: #223838f5;}
+    color: #223838f5;
+}
 
     .sec-foto {
     justify-self: center;
@@ -672,5 +681,12 @@ footer {
 
     .project-header h3 {
     font-size: 1.8em;   
+    }
+
+    .project , .contact ,.intro {
+    padding: 3rem;
+    margin: 20px;
+    border-radius: 15px;    
+    width: 100%;
     }
 }
