@@ -3,10 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #94eaf0;
+    color: #d3ebeb;
 }
 li{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #011f1f;
+    font-weight: 300;
 }
 
   [class*="col-"] {
@@ -28,7 +34,7 @@ li{
 body {
 background: #4CA1AF;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #81d4d4, #047e7ef8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom, #79bbbb, #047e7ef8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 font-size: 16px;
     margin: 0;
@@ -41,7 +47,7 @@ header {
 
 
 #logo {
-    height: 20%;
+    height: 8%;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -109,12 +115,11 @@ header {
 /* Main styling */
 main {
     font-size: 20px;
-    padding: 1rem;
     
 }
 
 h1 , h2{
-    color: rgba(113, 168, 168, 0.767);
+    color: rgba(33, 105, 105, 0.767);
     text-align: center;
     text-shadow: 0 2px  #080808;
 }
@@ -174,7 +179,6 @@ h3 {
 }
 
 .sec-main {
-    padding: 3rem 1rem;
     text-align: center;
 }
 
@@ -192,6 +196,72 @@ h3 {
 .ik-ben {
     display: block;
 }
+
+.aboutme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 15px;  
+    background: linear-gradient(120deg,  #e6840e, #e7f0ef);
+    border-radius: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.aboutme-header:active {
+    opacity: 0.8;
+}
+
+.aboutme-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #d0e6e7;
+    text-shadow: 0 1px 2px #080808;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.aboutme-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0;
+    margin-top: 0;
+    color: #0f0202;
+    background-color: rgb(76 131 126 / 22%);
+}
+
+.aboutme-content.active {
+    padding: 20px;
+    max-height: 1000px; 
+    margin-top: 10px;
+}
+
+.aboutme-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    word-wrap: break-word;  /* Breekt lange woorden */
+    overflow-wrap: break-word;
+}
+
+.aboutme-content section{
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #container-kenmerken {
     display: flex;
@@ -214,8 +284,7 @@ h3 {
 #mijn-kenmerken, #mijn-vaardigheden, #mijn-achtergrond {
     padding: 2rem;
     margin: 2rem 0;
-    background-color: #86cebc1a;
-    border-radius: 2rem;
+    background-color: #86cebc54;
 }
 
 /* iconen in de kenmerken lijst */
@@ -227,11 +296,16 @@ svg {
     color: #096e63;
 }
 
-
+#projecten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
                 /* De divs styling van de pagina's */
 .project , .contact ,.intro {
     padding: 1rem;
-    margin: 10px;
+    width: 100%;
     border-radius: 10px;
     transition: all 0.3s ease;
     background-color: #13575c1a;
@@ -249,7 +323,7 @@ svg {
 
 .project-title h1 {
     font-size: 3rem;
-    color: #166464f5;
+    color: #055555f5;
     text-shadow: 0 2px  #080808;
     margin-bottom: 1rem;
 }
@@ -259,23 +333,23 @@ svg {
     align-items: center;
     cursor: pointer;
     user-select: none;
-    padding: 15px;  
-    background: linear-gradient(120deg,  #209599, #e7f0ef);
-    border-radius: 20px;
-    -webkit-tap-highlight-color: transparent;
+    padding: 10px;  
+    background: linear-gradient(120deg,  #209599, #028172);
+    border-radius: 5px;
 }
 
 .project-header:active {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .project-header h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #d0e6e7;
-    text-shadow: 0 1px 2px #080808;
-    flex: 1;
-    padding-right: 10px;
+    color: #b9d2d3;
+    text-shadow: 0 1px 1px #080808;
+    flex: 2;
+    max-width: 90%;
+    padding-right: 5px;
 }
 
 .arrow {
@@ -476,6 +550,7 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
     }
 
 .sec-foto {
@@ -528,8 +603,8 @@ footer {
 }
 
 #wie-ben-ik{
-    float: right;
-    max-width: 50%;
+    float: center;
+    max-width: 100%;
 }
 
 .ik-ben{
@@ -547,6 +622,9 @@ footer {
     flex: 1;
     border-radius: 0 3rem ;
     min-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .project:hover{
@@ -555,18 +633,15 @@ footer {
 }
 
 .project-header {
-    padding: 20px;  
-    background: linear-gradient(120deg,  #1d7777, #67beb4);
-    border-radius: 20px;
+    background: linear-gradient(120deg,  #1d7777, #04665b);
+    border-radius: 10px;
 }
 
 .project-header h3 {
     font-size: 1.5em;
 }
 
-.project-content {
-    padding: 10px 20px;
-}
+
 
 .project-content.active {
 padding: 20px;
@@ -583,7 +658,6 @@ max-height: 2000px;
 
 /* Footer styling */
 footer {
-    background-color: #9c9c9c2a;
     color:#333;
     text-align: center;
     bottom: 0;
@@ -638,9 +712,23 @@ footer {
     align-self: center;
 }   
 
+.intro {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 2rem;
+    align-self: center;
+}
+
+.intro p {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-family: "Parisienne", cursive;
+}
 #welkom {
-    font-size: 6rem;
-    font-family: 'Playfair Display', roboto;
+    font-size: 120px;
+    font-family: "Parisienne", cursive, roboto;
+    font-weight: bold;
     color: #223838f5;
 }
 
@@ -671,5 +759,14 @@ footer {
     margin: 20px;
     border-radius: 15px;    
     width: 100%;
+    }
+
+    #footer-home p{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2em;
+    width: 100%;
+    font-family: "Parisienne", cursive;
     }
 }

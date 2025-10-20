@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mr+Dafoe&family=Pacifico&family=Playwrite+ES:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/styles.css">
         <title>Over mij</title>
     </head>
     <body>
@@ -31,24 +32,32 @@
             <section class="sec-main , sec-main-over-mij" >
                 <section class="col-12" id="sec-foto">
                     <img id="mijn-foto" src="../afbeeldingen/mijn-foto-2.jpg" alt="Mijn foto">
-                    <div id="wie-ben-ik" class="ik-ben">                    
+                </section>
+                <section id="aboutme" class="col-12">
+                    <div id="wie-ben-ik" class="ik-ben" class="aboutme-header" onclick="toggleAboutMe(this)">                    
                         <h1>Wie ben ik?</h1>
-                        <hr>
-                        <br>
-                        <p>Mijn naam is <strong>Elly Gomes</strong> . <br> Ik ben <span id="leeftijd"></span> jaar en kom uit Rotterdam. <br>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <div class="aboutme-content">
+                            <p>Mijn naam is <strong>Elly Gomes</strong> . <br> Ik ben <span id="leeftijd"></span> jaar en kom uit Rotterdam. <br>
                             Ik ben een creatieve en praktische denker met een passie voor technologie en design. <br>
                             Mijn doel is om gebruiksvriendelijke en visueel aantrekkelijke digitale ervaringen te creëren die mensen echt helpen en inspireren.
                             <br>
                             Ik houd ervan om creatief en resultaatgericht te werken, waarbij ik altijd streef naar kwaliteit en functionaliteit.
                             <br>
                             Ook ben ik continu bezig met het uitbreiden van mijn kennis en vaardigheden om projecten van concept tot realisatie te brengen.
-                        </p>
+                            </p>
+                    </div>
+                </section>
                     </div>
                 </section>
                 <section id="container-kenmerken" class="col-12">
                     <div id="mijn-kenmerken" class="ik-ben" class
-                        ="col-12">                    
+                        ="col-12" class="aboutme-header" onclick="toggleAboutMe(this)">                    
                         <h1 id="overmij" class="col-12">Over mij</h1>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                        </div>
+                    <div class="aboutme-content">
                             <ul id="kenmerken-lijst">
                                 <li>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5">
@@ -108,68 +117,70 @@
                             </ul>
                         </p>
                     </div>
-                                   
-                    <div id="mijn-vaardigheden" class="ik-ben">
-                        <h1>Mijn vaardigheden</h1>
-                        <br>
-                        <hr>
-                        <br>
-                        <h2>Wat ik  leer/ heb geleerd..</h2>
-                        <br>
-                        
-                        <br>
-                        <div class="geleerd">
-                            <h3><em><u>Bij mijn huidige baan:</u></em></h3>
-                            <br>
-                            <h4><em>Precisie:</em></h4>
-                            <p>Zelfs de kleinste details zijn belangrijk om een perfect resultaat te bereiken. Zo ook in de techwereld.</p>
-                            <br>
-                            <h4><em>Luisteren:</em></h4>
-                            <p>De ene klant weet wat hij of zij wilt. De ander niet. En soms weten ze het niet te verwoorden. Dat betekent dat er vragen gesteld moeten worden om de wensen van de klant te kunnen begrijpen en samen uit komen wat er nodig is om tot de oplossing te komen. En de key is om dit te vertalen naar begrijpelijke keuzes.</p>
-                            <br>
-                            <h4><em>Esthetiek + functionaliteit:</em></h4>
-                            <p>Een mooi gordijn is leuk, maar het moet ook functioneel zijn. Hetzelfde geldt voor digitale producten. Ze moeten er niet alleen goed uitzien, maar ook gebruiksvriendelijk en functioneel zijn.</p>
-                            <br>
-                            <h4><em>Maatwerk:</em></h4>
-                            <p>Elk raam is anders, elke klant is anders. Daarom is maatwerk essentieel. Ook in de techwereld betekent dit dat oplossingen op maat gh4aakt moeten worden om aan de specifieke behoeften van gebruikers te voldoen.</p>
+                        <section>
+                            <div id="mijn-vaardigheden" class="ik-ben" onclick="toggleAboutMe(this)">
+                                <h1>Mijn vaardigheden</h1>
+                                <i class="fa-solid fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="aboutme-content">
+                                <h2>Wat ik  leer/ heb geleerd..</h2>
+                                <div class="geleerd">
+                                    <h3><em><u>Bij mijn huidige baan:</u></em></h3>
+                                    <br>
+                                    <h4><em>Precisie:</em></h4>
+                                    <p>Zelfs de kleinste details zijn belangrijk om een perfect resultaat te bereiken. Zo ook in de techwereld.</p>
+                                    <br>
+                                    <h4><em>Luisteren:</em></h4>
+                                    <p>De ene klant weet wat hij of zij wilt. De ander niet. En soms weten ze het niet te verwoorden. Dat betekent dat er vragen gesteld moeten worden om de wensen van de klant te kunnen begrijpen en samen uit komen wat er nodig is om tot de oplossing te komen. En de key is om dit te vertalen naar begrijpelijke keuzes.</p>
+                                    <br>
+                                    <h4><em>Esthetiek + functionaliteit:</em></h4>
+                                    <p>Een mooi gordijn is leuk, maar het moet ook functioneel zijn. Hetzelfde geldt voor digitale producten. Ze moeten er niet alleen goed uitzien, maar ook gebruiksvriendelijk en functioneel zijn.</p>
+                                    <br>
+                                    <h4><em>Maatwerk:</em></h4>
+                                    <p>Elk raam is anders, elke klant is anders. Daarom is maatwerk essentieel. Ook in de techwereld betekent dit dat oplossingen op maat gh4aakt moeten worden om aan de specifieke behoeften van gebruikers te voldoen.</p>
+                                </div>
+                                <br>
+                                <hr>
+                                <br>
+                                <div class="geleerd">
+                                    <h3><em><u>Bij mijn opleiding Front-end developer:</u></em></h3>
+                                    <br>
+                                    <h4><em>Development skills</em></h4>
+                                    <p>HTML, CSS, JavaScript, responsive design, versiebeheer met Git en GitHub, frameworks zoals Bootstrap en React.  </p>
+                                    <br>
+                                    <h4><em>Probleemoplossend denken:</em></h4>
+                                    <p>Het vermogen om technische uitdagingen te analyseren en effectieve oplossingen te vinden tijdens het ontwikkelingsproces.</p>
+                                    <br>
+                                    <h4><em>Creativiteit:</em></h4>
+                                    <p>Het vermogen om innovatieve en aantrekkelijke ontwerpen te creëren die de gebruikerservaring verbeteren.</p>
+                                    <br>
+                                    <h4><em>UI/UX design</em></h4>
+                                    <p>Basisprincipes van gebruikersinterface (UI) en gebruikerservaring (UX) ontwerp om gebruiksvriendelijke en aantrekkelijke webpagina's te maken. Daarbij gebruik gemaakt van o.a. Figma en Adobe XD.</p>
+                                </div>
+                            </div>   
+                        </section>       
+                    <section>
+                        <div id="mijn-achtergrond" class="ik-ben" onclick="toggleAboutMe(this)">
+                            <h1>Mijn achtergrond</h1>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
                         </div>
-                        <br>
-                        <hr>
-                        <br>
-                        <div class="geleerd">
-                        <h3><em><u>Bij mijn opleiding Front-end developer:</u></em></h3>
-                        <br>
-                        <h4><em>Development skills</em></h4>
-                        <p>HTML, CSS, JavaScript, responsive design, versiebeheer met Git en GitHub, frameworks zoals Bootstrap en React.  </p>
-                        <br>
-                        <h4><em>Probleemoplossend denken:</em></h4>
-                        <p>Het vermogen om technische uitdagingen te analyseren en effectieve oplossingen te vinden tijdens het ontwikkelingsproces.</p>
-                        <br>
-                        <h4><em>Creativiteit:</em></h4>
-                        <p>Het vermogen om innovatieve en aantrekkelijke ontwerpen te creëren die de gebruikerservaring verbeteren.</p>
-                        <br>
-                        <h4><em>UI/UX design</em></h4>
-                        <p>Basisprincipes van gebruikersinterface (UI) en gebruikerservaring (UX) ontwerp om gebruiksvriendelijke en aantrekkelijke webpagina's te maken. Daarbij gebruik gemaakt van o.a. Figma en Adobe XD.</p>
-                        </div>
-                    </div>    
-                    <div id="mijn-achtergrond" class="ik-ben">
-                        <h1>Mijn achtergrond</h1>
-                        <hr>
-                        <br>
-                        <p>In mijn huidige baan werk ik als gordijnspecialiste. <br>
-                        Elke dag help ik klanten die zeggen: <em>"Ik wil iets moois, maar het moet ook functioneel zijn. En het moet precies passen bij mijn raam, mijn interieur en mijn budget".</em><br>
-                        In de tech werkt het net zo! Want dat is exact wat gebruikers ook willen van digitale producten.
-                        Dus realiseerde ik me dat ik dit ook wil doen met technologie. <br>
-                        En volgde ik de opleiding Front-end developer bij de NHA naast mijn werk en gezin. Daar merkte ik dat mijn passie in de technologie zit en ik er ook mijn creativiteit in kwijt kan.<br>
-                    </p>
-                    <p><strong><em>Want of het nu gaat om gordijnen of interface: Maatwerk dat echt past, daar word ik blij van!</em></strong></p>
-                    </div>            
+                        <div class="aboutme-content">
+                            <br>
+                            <p>In mijn huidige baan werk ik als gordijnspecialiste. <br>
+                            Elke dag help ik klanten die zeggen: <em>"Ik wil iets moois, maar het moet ook functioneel zijn. En het moet precies passen bij mijn raam, mijn interieur en mijn budget".</em><br>
+                            In de tech werkt het net zo! Want dat is exact wat gebruikers ook willen van digitale producten.
+                            Dus realiseerde ik me dat ik dit ook wil doen met technologie. <br>
+                            En volgde ik de opleiding Front-end developer bij de NHA naast mijn werk en gezin. Daar merkte ik dat mijn passie in de technologie zit en ik er ook mijn creativiteit in kwijt kan.<br>
+                            </p>
+                            <p><strong><em>Want of het nu gaat om gordijnen of interface: Maatwerk dat echt past, daar word ik blij van!</em></strong></p>
+                        </div>            
+                    </section>
                 </section>
             </section>
         </main>
                 <!-- Footer -->
         <footer class="col-12">
-            <p>&copy; 2025 Elly's Portfolio</p>
+            <p>&copy; 2025 Elly's Portofolio</p>
             <p>Volg me op social media!</p>
             <ul>
                 <li class="linked-in"><a href="https://www.linkedin.com/in/elly.gomes-89b9b473">LinkedIn</a></li>
