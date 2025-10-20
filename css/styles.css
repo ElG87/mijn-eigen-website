@@ -216,7 +216,7 @@ h3 {
 .aboutme-header h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #d0e6e7;
+    color: #588285;
     text-shadow: 0 1px 2px #080808;
     flex: 1;
     padding-right: 10px;
@@ -228,13 +228,12 @@ h3 {
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
     padding: 0;
     margin-top: 0;
-    color: #0f0202;
     background-color: rgb(76 131 126 / 22%);
 }
 
 .aboutme-content.active {
     padding: 20px;
-    max-height: 1000px; 
+    max-height: 100%; 
     margin-top: 10px;
 }
 
@@ -272,7 +271,6 @@ h3 {
 
 #mijn-kenmerken {
     flex: 1;
-    padding: 2rem;
     background-color: #13575c1a;
 }
 
@@ -284,7 +282,6 @@ h3 {
 #mijn-kenmerken, #mijn-vaardigheden, #mijn-achtergrond {
     padding: 2rem;
     margin: 2rem 0;
-    background-color: #86cebc54;
 }
 
 /* iconen in de kenmerken lijst */
