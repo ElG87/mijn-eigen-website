@@ -193,6 +193,21 @@ h3 {
     margin: 1rem;
 }
 
+ /* Pijltje styling voor de 'Over mij'-pagina */
+.arrow {
+    font-size: 1.3em;
+    color: #14595e;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    rotate: 180deg;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+/* 'Over mij' pagina styling */
+
 .ik-ben {
     display: block;
 }
@@ -220,12 +235,15 @@ h3 {
     text-shadow: 0 1px 2px #080808;
     flex: 1;
     padding-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .aboutme-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: max-height 0.5 ease, opacity 5s ease;
+    opacity: 0;
     padding: 0;
     margin-top: 0;
     background-color: rgb(76 131 126 / 22%);
@@ -235,6 +253,7 @@ h3 {
     padding: 20px;
     max-height: 100%; 
     margin-top: 10px;
+    opacity: 1;
 }
 
 .aboutme-content p {
@@ -248,20 +267,7 @@ h3 {
     margin: 10px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Kenmerken, vaardigheden en achtergrond secties styling */
 #container-kenmerken {
     display: flex;
     justify-content: center;
@@ -293,6 +299,7 @@ svg {
     color: #096e63;
 }
 
+/* Projecten pagina styling */
 #projecten {
     display: flex;
     flex-direction: column;
@@ -349,17 +356,6 @@ svg {
     padding-right: 5px;
 }
 
-.arrow {
-    font-size: 1.3em;
-    color: #14595e;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-}
-
-.arrow.active {
-    transform: rotate(180deg);
-}
-
 .project-content {
     max-height: 0;
     overflow: hidden;
@@ -388,7 +384,8 @@ svg {
 
 /* Mijn fotostyling op de 'Over mij'-pagina */
 #mijn-foto {
-    max-width: 50%;
+    max-width: 30%;
+    margin-top: 20%;
     height: auto;
     border-radius: 50%;
     border: solid 2px #64e2cdef;
