@@ -47,7 +47,7 @@ header {
 
 
 #logo {
-    height: 8%;
+    height: 15%;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -56,7 +56,7 @@ header {
     width: auto; 
     border-radius: 50%;
     border: #0e0f0f solid 2px;
-    box-shadow: #080808 5px 4px 10PX   ;
+    box-shadow: #080808 5px 4px 10px;
 }
 
 
@@ -130,11 +130,16 @@ h3 {
 
 .intro{
     animation: fadeIn 5s ease;
+     font-family: "Parisienne", cursive;
+}
+
+.welkom {
+    font-size: 2rem;
+    margin: 3rem 2rem;
 }
 
 #welkom {
-    font-family: 'Montserrat', sans-serif;
-    justify-self: center;
+ font-family: "Parisienne", cursive;
     margin: 2rem;
 }
 
